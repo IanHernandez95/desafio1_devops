@@ -27,7 +27,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-  login:
+  login-build-push:
     runs-on: ubuntu-latest
     needs: build
 
