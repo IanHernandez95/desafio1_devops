@@ -34,10 +34,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build imagen docker
-        uses: docker build -t ianhernandez01/desafio1_devops$GITHUB_SHA:latest
+        run: docker build -t ianhernandez01/desafio1_devops$GITHUB_SHA:latest
 
       - name: Push imagen docker
-        uses: docker push ianhernandez01/desafio1_devops$GITHUB_SHA:latest  
+        run: docker push ianhernandez01/desafio1_devops$GITHUB_SHA:latest  
 
 
 
