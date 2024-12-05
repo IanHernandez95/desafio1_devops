@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build imagen docker
-        run: docker build -t ianhernandez01/desafio1_devops-${{ GITHUB.SHA }}:latest
+        run: docker build -t ianhernandez01/desafio1_devops-${{ GITHUB.SHA }}:latest .
 
   push:
     runs-on: ubuntu-latest
